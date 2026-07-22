@@ -92,9 +92,9 @@ The project uses a trained Random Forest Regression model and provides an intera
 
 ## 📊 Model Performance
 
-R² : 0.9731297864736275
-MAE : 6779.7544589223435
-RMSE : 13147.43447394635
+- R² : 0.9731297864736275
+- MAE : 6779.7544589223435
+- RMSE : 13147.43447394635
 
 ---
 
