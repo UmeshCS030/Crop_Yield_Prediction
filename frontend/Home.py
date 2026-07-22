@@ -1,5 +1,6 @@
 import streamlit as st
 import base64
+from pathlib import Path
 
 # -------------------------------------------------
 # Page Configuration
@@ -13,12 +14,19 @@ st.set_page_config(
 )
 
 # -------------------------------------------------
+# Base Directory
+# -------------------------------------------------
+
+BASE_DIR = Path(__file__).parent
+
+# -------------------------------------------------
 # Load CSS
 # -------------------------------------------------
 
 def load_css():
+    css_file = BASE_DIR / "styles" / "home.css"
 
-    with open("styles/home.css") as f:
+    with open(css_file, "r", encoding="utf-8") as f:
         st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
 load_css()
@@ -27,9 +35,10 @@ load_css()
 # Load Background Image
 # -------------------------------------------------
 
-with open("images/home_page.jpg", "rb") as image:
-    encoded = base64.b64encode(image.read()).decode()
+image_path = BASE_DIR / "images" / "home_page.jpg"
 
+with open(image_path, "rb") as image:
+    encoded = base64.b64encode(image.read()).decode()
 # -------------------------------------------------
 # Hero Background
 # -------------------------------------------------
