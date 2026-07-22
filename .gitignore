@@ -37,6 +37,3 @@ Thumbs.db
 
 # Streamlit
 .streamlit/secrets.toml
-
-#.pkl file
-models/*.pkl

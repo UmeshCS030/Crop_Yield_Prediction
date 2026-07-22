@@ -2,15 +2,26 @@ from fastapi import FastAPI
 from pydantic import BaseModel
 import pandas as pd
 import joblib
+import gdown
 from pathlib import Path
+from fastapi.middleware.cors import CORSMiddleware
 
 # Create FastAPI application
 app = FastAPI()
 
-# Path to the trained model
-MODEL_PATH = Path(__file__).resolve().parent.parent / "models" / "crop_yield_model.pkl"
+#Add CORS
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
-# Load the trained model
+# Path to the trained model
+BASE_DIR = Path(__file__).resolve().parent.parent
+MODEL_PATH = BASE_DIR / "models" / "crop_yield_model.pkl"
+
 model = joblib.load(MODEL_PATH)
 
 #Create the input Model
