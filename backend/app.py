@@ -2,7 +2,6 @@ from fastapi import FastAPI
 from pydantic import BaseModel
 import pandas as pd
 import joblib
-import gdown
 from pathlib import Path
 from fastapi.middleware.cors import CORSMiddleware
 
