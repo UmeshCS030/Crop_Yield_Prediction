@@ -1,0 +1,380 @@
+/* ------------------------------------------------ */
+/* Hide Streamlit                                   */
+/* ------------------------------------------------ */
+
+#MainMenu{
+visibility:hidden;
+}
+
+header{
+visibility:hidden;
+}
+
+footer{
+visibility:hidden;
+}
+
+.block-container{
+
+padding:0;
+
+max-width:100%;
+
+}
+
+/* ------------------------------------------------ */
+/* Hero Section                                     */
+/* ------------------------------------------------ */
+
+.hero-container{
+height:100vh;
+background-size:cover;
+background-position:center;
+display:flex;
+flex-direction:column;
+}
+
+/* ------------------------------------------------ */
+/* Navigation                                       */
+/* ------------------------------------------------ */
+
+.navbar{
+position:fixed;
+top:0;
+left:0;
+right:0;
+z-index:999;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:18px 70px;
+background:rgba(10,25,20,.45);
+backdrop-filter:blur(14px);
+border-bottom:1px solid rgba(255,255,255,.08);
+}
+
+.logo{
+font-size:32px;
+font-weight:800;
+color:white;
+text-shadow:2px 2px 10px rgba(0,0,0,.6);
+}
+
+.menu{
+display:flex;
+gap:45px;
+}
+
+.menu a{
+    font-size:20px;
+    font-weight:600;
+    color:white;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.menu a:hover{
+    color:#7CFC00;
+}
+
+/* ------------------------------------------------ */
+/* Hero                                             */
+/* ------------------------------------------------ */
+
+.hero-content{
+flex:1;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+}
+
+.hero-content h1{
+font-size:76px;
+font-weight:900;
+line-height:1.1;
+background:linear-gradient(
+90deg,
+#ffffff,
+#b8ffb3,
+#6ee7b7
+);
+
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+margin-bottom:20px;
+animation:fadeUp 1.2s ease;
+}
+
+.hero-content h2{
+font-size:34px;
+color:#A8FF60;
+margin-bottom:25px;
+animation:fadeUp 1.4s ease;
+}
+
+.hero-content p{
+font-size:23px;
+line-height:1.7;
+max-width:900px;
+color:white;
+animation:fadeUp 1.6s ease;
+}
+
+/* ------------------------------------------------ */
+/* Button                                           */
+/* ------------------------------------------------ */
+
+div.stButton{
+margin-top:-180px;
+animation:fadeUp 1.8s ease;
+}
+
+div.stButton button{
+height:74px;
+background:linear-gradient(
+135deg,
+#169745,
+#16a34a
+);
+border-radius:18px;
+border:none;
+transition:.35s;
+box-shadow:0 10px 25px rgba(0,0,0,.35);
+}
+
+div.stButton button p{
+font-size:28px !important;
+font-weight:700 !important;
+color:white;
+text-shadow:1px 1px 5px rgba(0,0,0,.8);
+}
+
+div.stButton button:hover{
+transform:translateY(-6px) scale(1.03);
+box-shadow:0 18px 40px rgba(34,197,94,.45);
+}
+
+/* ------------------------------------------------ */
+/* Scroll                                           */
+/* ------------------------------------------------ */
+
+.scroll{
+font-size:18px;
+color:white;
+animation:bounce 2s infinite;
+opacity:.85;
+letter-spacing:2px;
+text-align:center;
+margin-top:5px;
+}
+
+@keyframes bounce{
+
+0%,20%,50%,80%,100%{
+transform:translateY(0);
+}
+
+40%{
+transform:translateY(-8px);
+}
+
+60%{
+transform:translateY(-4px);
+}
+}
+
+
+/* ================================================= */
+/* Section */
+/* ================================================= */
+
+.section{
+padding:90px 60px;
+background:#08130D;
+}
+
+/* Section Title */
+
+.section-title{
+text-align:center;
+font-size:42px;
+color:white;
+margin-bottom:100px;
+}
+
+/* ================================================= */
+/* Feature Cards */
+/* ================================================= */
+
+.feature-container{
+
+display:flex;
+justify-content:center;
+gap:35px;
+flex-wrap:wrap;
+text-align: center;
+margin-top:40px;
+}
+
+.feature-card{
+width:330px;
+padding:40px;
+border-radius:22px;
+background:rgba(255,255,255,.08);
+backdrop-filter:blur(18px);
+border:1px solid rgba(255,255,255,.12);
+transition:.35s;
+cursor:pointer;
+overflow:hidden;
+position:relative;
+}
+
+.feature-card:hover{
+transform:translateY(-10px);
+box-shadow:0 15px 35px rgba(0,0,0,.45);
+}
+
+.feature-card h3{
+font-size:28px;
+margin:20px 0;
+}
+
+.feature-card p{
+font-size:18px;
+line-height:1.8;
+color:#D6D6D6;
+}
+
+.icon{
+font-size:60px;
+transition:.4s;
+}
+
+/* ================================================= */
+/* Statistics */
+/* ================================================= */
+
+.stats-section{
+background:#0B1811;
+padding:90px 50px;
+}
+
+.stats-container{
+display:flex;
+justify-content:center;
+gap:70px;
+flex-wrap:wrap;
+}
+
+.stat-card{
+width:230px;
+padding:35px;
+border-radius:18px;
+background:#102118;
+transition:.3s;
+
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+}
+
+.stat-card:hover{
+transform:
+translateY(-8px);
+box-shadow:0 0 25px rgba(34,197,94,.35);
+}
+
+.stat-card h1{
+font-size:64px;
+color:#4ADE80;
+font-weight:900;
+margin-left:17px;
+}
+
+.stat-card p{
+font-size:22px;
+margin-top:0px;
+}
+
+.rf{
+transform: translateY(10px);
+}
+
+/* ================================================= */
+/* Footer */
+/* ================================================= */
+
+.footer{
+background:#050A07;
+padding:60px;
+text-align:center;
+color:#ccc;
+border-top:1px solid rgba(255,255,255,.08);
+}
+
+.footer h3{
+font-size:28px;
+color:white;
+margin-bottom:15px;
+}
+
+.footer p{
+font-size:18px;
+margin:8px;
+}
+
+@keyframes fadeUp{
+
+from{
+opacity:0;
+transform:translateY(40px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+
+/* ================================================= */
+/* Responsive Layout */
+/* ================================================= */
+
+@media (max-width:900px){
+.hero-content h1{
+font-size:48px;
+}
+
+.hero-content h2{
+font-size:24px;
+}
+
+.hero-content p{
+font-size:18px;
+}
+
+.navbar{
+padding:15px 25px;
+}
+
+.menu{
+display:none;
+}
+
+.feature-container{
+flex-direction:column;
+align-items:center;
+}
+
+.stats-container{
+flex-direction:column;
+align-items:center;
+}
+
+}

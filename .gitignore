@@ -1,0 +1,42 @@
+# -------------------------
+# Python
+# -------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environment
+venv/
+.env
+.venv/
+
+# IDE
+.vscode/
+.idea/
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Python cache
+.pytest_cache/
+.mypy_cache/
+
+# Logs
+*.log
+
+# Environment variables
+.env
+
+# Model files (optional)
+# Uncomment if you don't want to upload models
+# models/*.pkl
+
+# Streamlit
+.streamlit/secrets.toml
+
+#.pkl file
+models/*.pkl
