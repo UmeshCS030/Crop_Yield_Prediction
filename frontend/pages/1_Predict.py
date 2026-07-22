@@ -1,7 +1,6 @@
 #---import libraries
 import streamlit as st
 import requests
-
 from pathlib import Path
 
 #---Configure the page
@@ -136,10 +135,11 @@ if predict:
 
     }
 
+    API_URL = "https://crop-yield-prediction-6mjl.onrender.com/predict"
 
     #---Send the request
     response = requests.post(
-        "http://127.0.0.1:8000/predict",
+        API_URL,
         json=data
     )
 
