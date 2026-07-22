@@ -134,7 +134,7 @@ Crop_Yield_Prediction/
 
 Deployed application here:
 
-🔗 (https://cropyieldprediction-n8skzd6kijotjsdbpy6mnk.streamlit.app/)
+### 🔗 https://cropyieldprediction-n8skzd6kijotjsdbpy6mnk.streamlit.app/
 ---
 
 ## 🚀 Getting Started
