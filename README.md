@@ -92,11 +92,9 @@ The project uses a trained Random Forest Regression model and provides an intera
 
 ## 📊 Model Performance
 
-| Metric | Before Tuning | After Tuning |
-|---------|--------------:|-------------:|
-| R² Score | 0.973286 |  0.973526 |
-| MAE |  6553.024791 | 6509.605604 |
-| RMSE |  13109.205642 | 13050.227046 |
+R² : 0.9731297864736275
+MAE : 6779.7544589223435
+RMSE : 13147.43447394635
 
 ---
 
@@ -106,7 +104,8 @@ The project uses a trained Random Forest Regression model and provides an intera
 Crop_Yield_Prediction/
 │
 ├── backend/
-│   └── app.py
+│   ├── app.py
+│   └── requirements.txt
 │
 ├── frontend/
 │   ├── Home.py
@@ -116,8 +115,15 @@ Crop_Yield_Prediction/
 │
 ├── models/
 │   └── crop_yield_model.pkl
+│ 
+├── notebook/
+│   └── model_training.ipynb
 │
+├── data/
+│   └── yield_df.csv
+│ 
 ├── requirements.txt
+├── runtime.txt
 ├── main.py
 └── README.md
 ```
@@ -128,8 +134,7 @@ Crop_Yield_Prediction/
 
 Deployed application here:
 
-🔗 https://
-
+🔗 (https://cropyieldprediction-n8skzd6kijotjsdbpy6mnk.streamlit.app/)
 ---
 
 ## 🚀 Getting Started
